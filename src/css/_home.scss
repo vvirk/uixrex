@@ -1,0 +1,169 @@
+.home {
+    width: 100%;
+    background: url(../images/Home-bg.png) no-repeat;
+    background-position: 27.1% 100.3%;
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.home-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 45px 0 95px 0;
+}
+
+.home-img {
+    max-width: 349px;
+    max-height: 710px;
+}
+
+.home-description {
+    width: 100%;
+    max-width: 592px;
+    padding-top: 115px;
+    text-align: right;
+}
+
+.home-title {
+    padding-bottom: 24px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 62px;
+}
+
+.home-subtitle {
+    padding-bottom: 78px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.store-link {
+    display: inline-block;
+    margin-right: 18px;
+    padding: 21px 44px 22px 96px ;
+    border-radius: 40px;
+    background-color: $dark-blue;
+    background-image: url(../images/Store-icons.png);
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover {
+        background-color: $light-blue;
+        transition: .6s;
+    }
+}
+.appstore {
+    background-position: -93% 50%;
+}
+
+.playstore {
+    background-position: 432% 50%;
+}
+
+.store-name {
+    display: flex;
+    padding-top: 8px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    text-align: left;
+}
+
+@media (max-width: 970px) {
+    .home-inner {
+        justify-content: center;
+    }
+
+    .home-description {
+        text-align: center;
+        padding: 65px 0 45px 0;
+    }
+
+    .home-img {
+        order: 2;
+    }
+}
+
+@media (max-width: 630px) {
+    .home-title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    
+    .home-subtitle {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 508px) {
+    .home-title {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    
+    .home-subtitle {
+        padding-bottom: 78px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .store-link {
+        padding: 15px 30px 15px 70px ;
+        font-size: 12px;
+    }
+
+    .appstore {
+        background-position: -27% 45%;
+    }
+    
+    .playstore {
+        background-position: 217% 50%;
+    }
+    
+    .store-name {
+        font-size: 16px;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .home {
+        background-position: 50%;
+    }
+
+    .home-img {
+        display: none;
+    }
+}
+
+@media (max-width: 399px) {
+    .home-title {
+        font-size: 20px;
+    }
+    
+    .home-subtitle {
+        padding-bottom: 30px;
+    }
+    .store-link {
+        margin: 10px;
+    }
+}
