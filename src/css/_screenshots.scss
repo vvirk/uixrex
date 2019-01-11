@@ -1,0 +1,132 @@
+.screenshots {
+    width: 100%;
+}
+
+.sl-content {
+    width: 100%;
+    max-width: 1920px;
+}
+
+.screenshots-inner {
+    padding: 70px 0 87px 0;
+}
+
+.screenshots-sl {
+    max-height: 831px;
+    padding: 87px 0 90px 0;
+    overflow: hidden;
+    position: relative;
+    .slick-list {
+        height: 100%;
+        .slick-slide {
+            height: 100%;
+        }
+    }
+}
+
+.slick-slide {
+    outline: none;
+}
+
+.screenshots-sl-slide {
+    max-height: 637px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    outline: none;
+    img {
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+}
+
+.screenshots-sl-slide .slick-slider {
+    overflow: hidden;
+}
+
+.screenshots-sl-slide .slick-list {
+    margin: 0 -1px;
+}
+
+.screenshots-sl-slide {
+    margin: 0 1px;
+}
+
+.screenshots-sl .slick-current .screenshots-sl-slide img {
+    box-shadow: 0 0 12px 5px rgba(58, 58, 58, 0.4);
+}
+
+
+.prev::before, .next::before {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    background-color: $light-blue;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 30px;
+    color: #fff;
+    box-shadow: 2px 5px 8px 1px rgba(58, 58, 58, 0.3);
+    z-index: 1001;
+    cursor: pointer;
+}
+
+.prev::before {
+    left: 45.6%;
+    bottom: 1%;
+}
+
+.next::before {
+    right: 45.6%;
+    bottom: 1%;
+}
+
+.prev:hover:before, .next:hover:before {
+    background-color: $dark-blue;
+    transition: .6s;
+}
+
+@media (max-width: 1465px) {
+    .screenshots-inner {
+        padding-bottom: 80px;
+    }
+
+    .prev::before {
+        left: 40%;
+    }
+    
+    .next::before {
+        right: 40%;
+    }
+}
+
+@media (max-width: 630px) {
+    .screenshots-inner,
+    .screenshots-sl {
+        padding: 50px 0;
+    }
+
+    .prev::before, .next::before {
+        width: 28px;
+        height: 28px;
+        font-size: 15px;
+        &:hover {
+            width: 27px;
+            height: 27px;
+        }
+    }
+
+    .prev::before {
+        left: 20%;
+    }
+    
+    .next::before {
+        right: 20%;
+    }
+}

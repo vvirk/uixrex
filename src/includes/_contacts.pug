@@ -1,1 +1,30 @@
 div.contacts
+  div.content
+    div.contacts-inner
+      div.title-wrapper
+        h2.contacts-title Say Hello To Us!
+        h3.contacts-subtitle.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+          tempor incididunt ut labore. et dolore magna aliqua..
+      div.contacts-section
+        div.contact-info
+          div.contact-info-item
+            p.contact-info-name 
+              i.fa.fa-map(aria-hidden="true")
+              |Location:
+            p.contact-info-description Jurain,Dhaka Bangladesh
+          div.contact-info-item
+            p.contact-info-name
+              i.fa.fa-phone(aria-hidden="true")
+              |Phone:
+            p.contact-info-description +1234321321
+          div.contact-info-item
+            p.contact-info-name
+              i.fa.fa-envelope(aria-hidden="true")
+              |E-MAIL:
+            p.contact-info-description websitename@mail.com
+        form.contact-form
+          input.contact-form-input(type="text" placeholder="Name" name="name")
+          input.contact-form-input(type="email" placeholder="Email" name="email")
+          textarea.contact-form-textarea(name="message" placeholder="Your Message")
+          a.contact-form-button(href="#") Send Message
