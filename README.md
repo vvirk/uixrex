@@ -1,2 +1,2 @@
 # Link to Uixrex page
-* [Uixrex](https://boxing199.github.io/uixrex/dist/index.html)
+* [Uixrex](https://vvirk.github.io/uixrex/dist/index.html)
